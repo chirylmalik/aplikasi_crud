@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:background="@color/top_bg"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/fjalla_one"
+            android:layout_marginTop="13sp"
+            android:layout_marginLeft="26sp"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:id="@+id/inputData"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:background="@drawable/gradient_bg"
+            android:layout_marginTop="30dp"
+            android:padding="3dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Input Data"
+                    android:textStyle="bold"
+                    android:textSize="23sp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Melakukan penginputan data"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+            
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_input_data"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lihatData"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:background="@drawable/gradient_bg"
+            android:layout_marginTop="30dp"
+            android:padding="3dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Lihat Data"
+                    android:textStyle="bold"
+                    android:textSize="23sp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Melihat serta manajemen data"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_lihat_data"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
